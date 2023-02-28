@@ -10,3 +10,9 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "shared/banner";
+@import "shared/footer";
+
+.content {
+  min-height: 65vh;
+}
