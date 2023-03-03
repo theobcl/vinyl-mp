@@ -1,3 +1,6 @@
 <%= render "shared/banner" %>
 <div class="container">
+  <% @vinyls.each do |vinyl| %>
+    <h1 class="text-primary"><%= vinyl.name %></h1>
+  <% end %>
 </div>
