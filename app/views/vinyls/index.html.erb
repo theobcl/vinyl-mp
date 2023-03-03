@@ -1,0 +1,6 @@
+<h1>Our vinyls (<%= Vinyl.all.size %>)</h1>
+<ul>
+  <% @vinyls.each do |vinyl| %>
+    <li><%= vinyl.name %></li>
+  <% end %>
+</ul>

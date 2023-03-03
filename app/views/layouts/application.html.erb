@@ -12,9 +12,15 @@
 
   <body>
     <%= render "shared/navbar" %>
-    <div class="content">
+
+    <% if params[:action] == "home" %>
+      <%= render "shared/home-banner" %>
+    <% end %>
+
+    <div class="content container my-4">
       <%= yield %>
     </div>
+
     <%= render "shared/footer" %>
     <%= render "shared/flashes" %>
   </body>

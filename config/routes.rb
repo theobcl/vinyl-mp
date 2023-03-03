@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+  get "/dashboard", to: "pages#dashboard"
+
   resources :users, only: :show do
     resources :vinyls, only: [:new, :create, :edit, :update]
   end
