@@ -3,5 +3,6 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-  has_many :vinyls, dependent: :destroy
+
+  validates :first_name, :last_name, :adress, :city, :zip_code, :date_of_birth, presence: :true
 end
