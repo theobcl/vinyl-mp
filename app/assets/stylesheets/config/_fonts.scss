@@ -1,8 +1,5 @@
 // Import Google fonts
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Yeseva+One&display=swap');
-// Define fonts for body and headers
-$body-font: 'Nunito', 'sans-serif';
-$headers-font: 'Yeseva One', 'cursive';
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
@@ -13,3 +10,12 @@ $headers-font: 'Yeseva One', 'cursive';
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
+@font-face {
+  font-family: 'Bright Melody';
+  src: asset-url('Bright_Melody.otf')
+}
+
+// Define fonts for body and headers
+$body-font: 'Nunito', 'sans-serif';
+$headers-font: 'Bright Melody';

@@ -8,5 +8,5 @@ end
 
 p "Create 15 vinyls"
 15.times do
-  Vinyl.create(name: Faker::Music.album, user: User.all.sample)
+  Vinyl.create(name: Faker::Music.album)
 end
